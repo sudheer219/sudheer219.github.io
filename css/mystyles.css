@@ -190,3 +190,15 @@ a.socialIcon:hover, .socialHoverClass {
 	-ms-transition: all 0.8s;
 	transition: all 0.8s;
 }  
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px){
+	.gallery_product{
+max-width:none;
+}
+.hero-content .h4 {
+    font-size: 1rem;
+    line-height: normal;
+}
+}
