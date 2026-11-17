@@ -1,97 +1,117 @@
-body{
+:root {
+    --section-space: 5rem;
+    --section-space-sm: 3rem;
+}
+
+body {
     font-family: 'Raleway', sans-serif;
     background: url('../images/bg-texture.jpg') no-repeat 0 0;
     background-size: cover;
     color: #161616;
 }
 
-.hero-content .h4{
-    line-height: 34px;;
+/* Global Section Spacing */
+section {
+    padding-top: var(--section-space);
+    padding-bottom: var(--section-space);
 }
 
-.hero-content h1.text-danger{
+.hero-content {
+    padding-top: var(--section-space);
+    padding-bottom: var(--section-space);
+    margin-bottom: 2rem;
+}
+
+.hero-content .h4 {
+    line-height: 34px;
+    margin-bottom: 1.25rem;
+}
+
+.hero-content h1.text-danger {
     color: #f32b58 !important;
+    margin-bottom: 1rem;
 }
 
-.skill-list{
+.skill-list {
     color: #007bff;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .gallery_product {
     background-color: #f5f5f5;
     color: #484848;
     text-align: center;
-    margin: 1px;
-    max-width: 32%;
+    margin: 8px;
+    max-width: calc(33.333% - 16px);
     height: 198px;
     justify-content: center;
     align-content: center;
     transition: all 0.3s;
-  }
+}
 
-  .gallery_product .logo-img{
+.gallery_product .logo-img {
     height: 198px;
     line-height: 198px;
-  }
+}
 
-  .logo-img.showDesc img{
+.logo-img.showDesc img {
     max-height: 100%;
-  }
+}
 
-  .logo-img.showDesc {
+.logo-img.showDesc {
     height: 100px;
-    line-height: normal;
-    padding-top: 0;
     line-height: 100px;
+    padding-top: 0;
 }
 
-.gallery_product.showDesc{
+.gallery_product.showDesc {
     height: auto;
+    padding-bottom: 1rem;
 }
 
-  .gallery_product .description{
-      padding-top: 5px;
-  }
+.gallery_product .description {
+    padding-top: 8px;
+}
 
-  .gallery_product p{
-      font-size: 0.90rem;
-  }
+.gallery_product p {
+    font-size: 0.90rem;
+}
 
-  .pruthvi-bg{
+.pruthvi-bg {
     background-color: #f3fafc;
-  }
+}
 
-  .colruyt-bg{
+.colruyt-bg {
     background-color: #f3f0ee;
-  }
+}
 
-  .learnsocial-bg{
+.learnsocial-bg {
     background-color: #fafafa;
-  }
+}
 
-  .haymarket-bg{
+.haymarket-bg {
     background-color: #ece5fd;
-  }
+}
 
-  .njc-bg{
+.njc-bg {
     background-color: #fff1f8;
-  }
+}
 
-  .synechron-bg{
+.synechron-bg {
     background-color: #fefbe2;
-  }
+}
 
-  .lazerx-bg{
+.lazerx-bg {
     background-color: #f8eee3;
-  }
+}
 
-  .thesso-bg{
+.thesso-bg {
     background-color: #e3f3fd;
-  }
-  
-  
-  /* Style the buttons */
-  .btn {
+}
+
+/* Style the buttons */
+.btn {
     border: none;
     outline: none;
     padding: 10px 18px;
@@ -100,105 +120,107 @@ body{
     border-radius: 25px;
     font-size: 0.85rem;
     font-weight: 600;
-    margin: 0 3px;
-    cursor: pointer;
-  }
-  
-  .btn:hover {
-    background-color: #f32b58;
-    color: white;
-  }
-  
-  .btn.active {
-    background-color: #f32b58;
-    color: white;
-  }
-
-  ul.social-network {
-	list-style: none;
-	display: inline;
-	margin-left:0 !important;
-	padding: 0;
+    margin: 4px 3px;
 }
+
+.btn:hover,
+.btn.active {
+    background-color: #f32b58;
+    color: white;
+}
+
+ul.social-network {
+    list-style: none;
+    display: inline-block;
+    margin: 1.5rem 0 0 0 !important;
+    padding: 0;
+}
+
 ul.social-network li {
-	display: inline;
-	margin: 0 5px;
+    display: inline;
+    margin: 0 5px;
 }
 
 .social-network a.icoFacebook:hover {
-	background-color:#3B5998;
+    background-color: #3B5998;
 }
 .social-network a.icoTwitter:hover {
-	background-color:#33ccff;
+    background-color: #33ccff;
 }
 .social-network a.icoGoogle:hover {
-	background-color:#BD3518;
+    background-color: #BD3518;
 }
 .social-network a.icoVimeo:hover {
-	background-color:#0590B8;
+    background-color: #0590B8;
 }
 .social-network a.icoLinkedin:hover {
-	background-color:#007bb7;
+    background-color: #007bb7;
 }
 .social-network a.icoPintrest:hover {
-	background-color:#BD3518;
+    background-color: #BD3518;
 }
-.social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
-.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i,
-.social-network a.icoPintrest:hover i  {
-	color:#fff;
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i,
+.social-network a.icoVimeo:hover i,
+.social-network a.icoLinkedin:hover i,
+.social-network a.icoPintrest:hover i {
+    color: #fff;
 }
-a.socialIcon:hover, .socialHoverClass {
-	color:#44BCDD;
+
+a.socialIcon:hover,
+.socialHoverClass {
+    color: #44BCDD;
 }
 
 .social-circle li a {
-	display:inline-block;
-	position:relative;
-	margin:0 auto 0 auto;
-	-moz-border-radius:50%;
-	-webkit-border-radius:50%;
-	border-radius:50%;
-	text-align:center;
-	width: 36px;
-	height: 36px;
-	font-size:16px;
-	background-color: #343a40;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+    background-color: #343a40;
 }
+
 .social-circle li i {
-	margin:0;
-	line-height:36px;
-	text-align: center;
+    margin: 0;
+    line-height: 36px;
+    text-align: center;
 }
 
-.social-circle li a:hover i, .triggeredHover {
-	-moz-transform: rotate(360deg);
-	-webkit-transform: rotate(360deg);
-	-ms--transform: rotate(360deg);
-	transform: rotate(360deg);
-	-webkit-transition: all 0.6s;
-	-moz-transition: all 0.6s;
-	-o-transition: all 0.6s;
-	-ms-transition: all 0.6s;
-	transition: all 0.6s;
+.social-circle li a:hover i,
+.triggeredHover {
+    transform: rotate(360deg);
+    transition: all 0.6s;
 }
+
 .social-circle i {
-	color: #fff;
-	-webkit-transition: all 0.8s;
-	-moz-transition: all 0.8s;
-	-o-transition: all 0.8s;
-	-ms-transition: all 0.8s;
-	transition: all 0.8s;
-}  
+    color: #fff;
+    transition: all 0.8s;
+}
 
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px){
-	.gallery_product{
-max-width:none;
+footer {
+    margin-top: var(--section-space);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
-.hero-content .h4 {
-    font-size: 1rem;
-    line-height: normal;
-}
+
+@media only screen and (max-width: 768px) {
+    :root {
+        --section-space: var(--section-space-sm);
+    }
+
+    .gallery_product {
+        max-width: 100%;
+        margin: 8px 0;
+    }
+
+    .hero-content .h4 {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
 }
